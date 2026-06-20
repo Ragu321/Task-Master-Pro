@@ -1,0 +1,18 @@
+name: kubernetes ci 
+on:
+  push:
+    branches: 
+      - main 
+      
+jobs:
+  java-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code checkout 
+        uses: actions/checkout@v4
+      - name: Build docker image 
+        run: "docker build -t raghavendra675/java:$GITHUB_SHA ." 
+
+
+        
+      
