@@ -11,7 +11,7 @@ jobs:
       - name: code checkout 
         uses: actions/checkout@v4
       - name: Build docker image 
-        run: "docker build -t raghavendra675/java:$GITHUB_SHA ."
+        run: "docker build -t raghavendra675/java:${GITHUB_SHA::7} ."
       - name: login docker   
         uses: docker/login-action@v3
         with:
