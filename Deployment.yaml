@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java
-          image: raghavendra675/java:fb4deb0
+          image: raghavendra675/java:3709060
           ports:
             - containerPort: 8080
 ---
@@ -29,4 +29,7 @@ spec:
     - port: 80
       targetPort: 8080
   type: LoadBalancer
-  
+  template:
+    spec:
+      containers:
+        - image: raghavendra675/java:3709060
