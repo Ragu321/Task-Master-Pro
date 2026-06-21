@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java
-          image: raghavendra675/java:$SHORT_SHA
+          image: raghavendra675/java:fb4deb0
           ports:
             - containerPort: 8080
 ---
@@ -32,4 +32,4 @@ spec:
   template:
     spec:
       containers:
-        - image: raghavendra675/java:$SHORT_SHA
+        - image: raghavendra675/java:fb4deb0
