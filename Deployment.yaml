@@ -29,7 +29,3 @@ spec:
     - port: 80
       targetPort: 8080
   type: LoadBalancer
-  template:
-    spec:
-      containers:
-        - image: raghavendra675/java:3709060
