@@ -28,7 +28,7 @@ jobs:
           #shot commit hash 
           SHORT_SHA=${GITHUB_SHA::7}
           # update image tag in deployment.yaml 
-          yq -i '.spec.template.spec.containers[0].image = "raghavendra675/java:$SHORT_SHA"' Deployment.yaml
+          yq -i '.spec.template.spec.containers[0].image = "raghavendra675/java:'"$SHORT_SHA"'"' Deployment.yaml
       - name: commit deployment files 
         run: | 
           git config --global user.name "github-actions[bot]"
