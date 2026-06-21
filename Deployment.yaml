@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: java
-          image: raghavendra675/java:9276af9
+          image: raghavendra675/java:83c0b98
           ports:
             - containerPort: 8080
